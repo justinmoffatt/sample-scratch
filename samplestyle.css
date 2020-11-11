@@ -1,0 +1,169 @@
+html{
+	--light: #EFEFEF;
+	--dark: #303030;
+	--accent: #8965BF;
+	color: var(--dark);
+	font-family: sans-serif;
+	text-align: center;
+	background-color: var(--light);
+}
+
+body{
+	margin:0;
+}
+
+.nav{
+	position: fixed;
+	background-color: var(--dark);
+	width: 100%;
+	box-shadow: 0 0 1em var(--dark);
+	display: flex;
+}
+
+.nav-group{
+	display: flex;
+	max-width: 50em;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.nav-group > .flex-item:last-child{
+	text-align: left;
+	padding-top: 1em;
+}
+
+.nav-group > .flex-item:first-child{
+	text-align: right;
+	padding-top: 1em;
+}
+
+.flex{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	padding: 1em;
+}
+
+.flex-item{
+	flex-grow: 1;
+	flex-basis: 0;
+}
+
+#logo{
+	max-width: 5em;
+	max-height: 5em;
+}
+
+.center{
+	text-align: center;
+	text-decoration: none;
+}
+
+.button{
+	color: var(--light);
+	background-color: var(--dark);
+	padding: 1em;
+	padding-left:1.5em;
+	padding-right:1.5em;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.button-multi{
+	margin-left: 0.5em;
+	margin-right: 0.5em;
+}
+
+.button:hover{
+	background-color:  var(--accent);
+	color: var(--light);
+}
+
+#selected{
+	background-color:  var(--light);
+	color: var(--dark);
+}
+
+.content{
+	padding-top:3em;
+	padding-left:1em;
+	padding-right:1em;
+	max-width: 50em;
+	margin-left: auto;
+	margin-right: auto;
+	position:static;
+}
+
+.foot{
+	padding-top: 2em;
+	padding-bottom: 2em;
+	font-size: .6em;
+}
+
+h1, h2, h3{
+	text-transform: uppercase;
+	color:  var(--accent);
+	display: inline-block;
+}
+
+a{
+	color: var(--accent);
+	text-decoration: none;
+}
+
+p{
+	text-align: left;
+	line-height: 1.25em;
+}
+
+img{
+	font-size: initial;
+	flex-basis: 49%;
+	flex-grow: 1;
+	margin:.25em;
+}
+
+form{
+	border-left-style: solid;
+	border-right-style: solid;
+	border-color: var(--accent);
+	padding: 2em;
+	max-width:35em;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+label{
+	text-align: left;
+	display:block;
+}
+
+input[type=text]{
+	display: flex;
+	margin: 1em;
+	margin-right:auto;
+	margin-left:auto;
+	width:95%;
+}
+
+input[type=submit]{
+	margin-top:1em;
+	padding:0.5em;
+	width:5em;
+	background-color: var(--dark);
+	color: var(--light);
+	border:0;
+}
+
+input[type=submit]:hover{
+	color: var(--light);
+	background-color: var(--accent);
+	cursor: pointer;
+}
+
+:target::before {
+  content: "";
+  display: block;
+  height: 3em;
+  margin: -3em 0 0; 
+}
